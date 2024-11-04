@@ -1,13 +1,13 @@
-// import { createApp } from 'vue'
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
 
-// createApp(App).use(router).mount('#app')
+import { createApp } from 'vue'
+import Home from './Home.vue'
+// import App from './App.vue'
+// import router from './router/router.js'
 
-Vue.config.productionTip = false
-
-new Vue({
-  router, // ルーティングのために追加
-  render: h => h(App),
-}).$mount('#app')
+// Homeを描画
+// const app = createApp(App)
+// app.use(router)
+// app.mount('#app')
+const home = createApp(Home);
+// home.use(router);
+home.mount('#home');

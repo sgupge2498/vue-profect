@@ -1,16 +1,23 @@
 <template>
   <div id="app">
-    <div 
-      id="nav" 
-      class="tab-area-base">
-      <ul class="tab-menu-base">
-<!-- `router.js` で定義したルーティングルールとの紐付けを行っている -->
-        <li><router-link to="/Folder">Folder</router-link></li>
-
-
-        <li><router-link to="/Note">Note</router-link></li>
-      </ul>
-    </div>
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/folder">Folder</router-link>
+    </nav>
     <router-view />
   </div>
 </template>
+
+<!-- <script setup>
+import { RouterView } from 'vue-router';
+const userName = 'POG'
+console.log(userName)
+</script>
+
+<template>
+  <div>
+    <main>
+      <RouterView />
+    </main>
+  </div>
+</template> -->
